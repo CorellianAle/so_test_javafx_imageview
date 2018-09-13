@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="sample.Screen"
+          prefHeight="400.0" prefWidth="600.0">
+
+    <padding>
+        <Insets left="10" top="10" right="10" bottom="10" />
+    </padding>
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="100" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="5" />
+        <RowConstraints percentHeight="90" />
+        <RowConstraints percentHeight="5" />
+    </rowConstraints>
+
+
+    <!-- header -->
+    <GridPane GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="gridPane_header">
+
+        <columnConstraints>
+            <ColumnConstraints percentWidth="20" hgrow="NEVER" />
+            <ColumnConstraints percentWidth="80" hgrow="NEVER" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints percentHeight="100" vgrow="NEVER" />
+        </rowConstraints>
+
+        <!-- logo -->
+
+    </GridPane>
+
+    <!-- content -->
+    <ScrollPane GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <GridPane fx:id="gridPane_content">
+
+        </GridPane>
+    </ScrollPane>
+
+    <!-- footer -->
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
+
+    </VBox>
+
+</GridPane>
